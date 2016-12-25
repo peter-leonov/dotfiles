@@ -1,0 +1,38 @@
+[gc]
+    auto = 0
+[core]
+#   editor = mate -wl1
+    excludesfile = /Users/peter/.gitignore-global
+[user]
+	name = Peter Leonov
+	email = gojpeg@gmail.com
+[alias]
+    cp = cherry-pick
+    pr = pull --rebase
+    rb = rebase -p
+    mr = merge --no-ff
+    mrn = merge --no-ff --no-commit
+    br = branch -v
+    st = status
+    s = status -s
+    lg = log --oneline --decorate --all --graph
+    ci = commit
+    co = checkout
+    hr = !git reset --hard && git clean -f -d
+    gca = gc --aggressive
+    x = !gitx
+    search = log -p -S
+    f  = fetch --all
+    rbc  = rebase --continue
+    rba  = rebase --abort
+    rbs  = rebase --skip
+[color]
+    ui = auto
+[push]
+	default = upstream
+# [format]
+	# pretty = oneline
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
