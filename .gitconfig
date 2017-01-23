@@ -9,7 +9,7 @@
 [alias]
     cp = cherry-pick
     pr = pull --rebase
-    rb = rebase -p
+    rb = rebase
     mr = merge --no-ff
     mrn = merge --no-ff --no-commit
     br = branch -v
@@ -26,6 +26,7 @@
     rbc  = rebase --continue
     rba  = rebase --abort
     rbs  = rebase --skip
+    rsh = reset --hard
 [color]
     ui = auto
 [push]
